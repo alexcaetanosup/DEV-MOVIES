@@ -1,6 +1,12 @@
 import React from 'react';
 import api from '../../services/api';
-import { Background, Info, Poster, Container } from '../Home/style.js';
+import {
+  Background,
+  Info,
+  Poster,
+  Container,
+  ContainerButtons,
+} from '../Home/style.js';
 import { useState, useEffect } from 'react';
 import Button from '../../componets/Button';
 
@@ -15,7 +21,7 @@ function Home () {
 
       // https://image.tmdb.org/t/p/original/sKlF9YrVu84DYMDAUZEZDCvDxK2.jpg
 
-      setMovie(results[3]);
+      setMovie(results[10]);
     }
     console.log(movie);
     getMovies();
@@ -31,10 +37,10 @@ function Home () {
             <Info>
               <h1>{movie.title}</h1>
               <p>{movie.overview}</p>
-              <div>
-                <Button>Assista Agora</Button>
-                <Button>Assista o Trailer</Button>
-              </div>
+              <ContainerButtons>
+                <Button red={true}>Assista Agora</Button>
+                <Button red={false}>Assista o Trailer</Button>
+              </ContainerButtons>
             </Info>
             <Poster>
               <img
