@@ -17,5 +17,6 @@ export default createGlobalStyle`
   }
   img {
     margin-top: 20px;
+    width: 300px;
 
   }`;
