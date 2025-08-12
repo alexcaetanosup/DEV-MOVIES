@@ -26,7 +26,7 @@ function Home () {
         data: { results },
       } = await api.get('/movie/popular');
       // https://image.tmdb.org/t/p/original/sKlF9YrVu84DYMDAUZEZDCvDxK2.jpg
-      setMovie(results[17]);
+      setMovie(results[15]);
     }
     console.log(movie);
 
