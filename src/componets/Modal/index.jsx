@@ -1,5 +1,5 @@
 import React from 'react';
-import api from '../../services/api';
+import { getMovie } from '../../services/getData';
 import {
   Background,
   Close_button,
@@ -12,14 +12,11 @@ function Modal ({ movieId, setShowModal }) {
 
   useEffect(() => {
     async function getMovies () {
-      const {
-        data: { results },
-      } = await api.get(`/movie/${movieId}/videos`);
-      console.log(results[0]);
-      setMovie(results[0]);
+      setMovie(await getMovie(movieId)); // getData.js
     }
+
     getMovies();
-  }, [movieId]);
+  }, []);
 
   return (
     <Background onClick={() => setShowModal(false)}>

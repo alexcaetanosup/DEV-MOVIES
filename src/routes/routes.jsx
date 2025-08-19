@@ -7,6 +7,7 @@ import Series from '../containers/Series';
 import DefaultLayout from '../layout/DefaulLayout';
 import DefaultTelas from '../layout/DefaulTelas';
 import Footer from '../componets/Footer'; // Assuming you have a Footer component
+import Detail from '../containers/Home/Detail';
 
 function Router () {
   return (
@@ -18,6 +19,7 @@ function Router () {
       </Route>
       <Route element={<DefaultTelas />}>
         <Route path='/footer' element={<Footer />} />
+        <Route path='/detalhe/:id' element={<Detail />} />
       </Route>
     </Routes>
   );
