@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Footer from '../componets/Footer'; // Assuming you have a Footer component
-import Header from '../componets/Header';
+import Footer from '../components/Footer'; // Assuming you have a Footer component
+import Header from '../components/Header';
 
 function DefaultTelas () {
   return (

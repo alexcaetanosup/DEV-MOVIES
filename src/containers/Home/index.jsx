@@ -18,9 +18,9 @@ import {
   ContainerButtons,
 } from '../Home/style.js';
 import { useState, useEffect } from 'react';
-import Button from '../../componets/Button';
-import Slider from '../../componets/Slider/index.jsx';
-import Modal from '../../componets/Modal/index.jsx';
+import Button from '../../components/Button';
+import Slider from '../../components/Slider/index.jsx';
+import Modal from '../../components/Modal/index.jsx';
 
 function Home () {
   const [movie, setMovie] = useState();

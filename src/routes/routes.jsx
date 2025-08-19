@@ -6,7 +6,7 @@ import Movies from '../containers/Movies';
 import Series from '../containers/Series';
 import DefaultLayout from '../layout/DefaulLayout';
 import DefaultTelas from '../layout/DefaulTelas';
-import Footer from '../componets/Footer'; // Assuming you have a Footer component
+import Footer from '../components/Footer'; // Assuming you have a Footer component
 import Detail from '../containers/Home/Detail';
 
 function Router () {

@@ -4,7 +4,7 @@ import {
   Background,
   Close_button,
   Container,
-} from '../../componets/Modal/style';
+} from '../../components/Modal/style';
 import { useState, useEffect } from 'react';
 
 function Modal ({ movieId, setShowModal }) {
